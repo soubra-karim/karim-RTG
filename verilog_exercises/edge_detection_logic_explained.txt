@@ -1,0 +1,191 @@
+Certainly! Let me re-explain how you can compare the previous state and the current state of a signal within the same always block in Verilog.
+Understanding the Concept
+
+In digital design, especially in Verilog, it's often necessary to detect changes in signals—like detecting edges (transitions from low to high or high to low). To do this within a single always block, you need to compare the current value of a signal with its previous value.
+
+Key Points:
+
+    Registers (reg): Used to store values across clock cycles.
+    Non-blocking Assignments (<=): Allow for the old value of a register to be used within the same time step, even if you assign a new value to it.
+
+Mechanism of Comparison in the Same always Block
+1. Non-Blocking Assignments and Timing
+
+    Non-blocking assignments (<=) defer the update of a variable until the end of the current simulation time step.
+    This means that within the same always block and the same time step, you can:
+        Read the old value of a variable.
+        Schedule a new value for the variable, which will take effect after the current time step.
+
+2. Steps in the always Block Execution
+
+Let's break down what happens during the execution of an always @(posedge clk) block:
+
+    Sampling Inputs:
+        At the clock edge, the always block is triggered.
+        All right-hand side (RHS) expressions are evaluated using the values before the clock edge.
+
+    Computing Outputs:
+        Calculations are performed using the sampled inputs and the old values of any registers.
+
+    Scheduling Updates:
+        Any assignments using non-blocking assignments (<=) are scheduled to update at the end of the time step.
+
+    Updating Registers:
+        After all always blocks have been evaluated for the current time step, the scheduled updates occur simultaneously.
+
+3. Comparing Previous and Current States
+
+Within the always block:
+
+    Previous State: The value of the register at the start of the time step.
+    Current State: The value of the input signal at the current time.
+
+By using the old value of a register (which hasn't been updated yet within the time step) and the current value of an input signal, you can compare the previous and current states.
+Practical Example: Edge Detection
+
+Let's consider detecting a rising edge of a signal signal.
+Verilog Code
+
+module rising_edge_detector (
+    input clk,
+    input signal,       // Input signal to detect edges on
+    output reg edge_detected
+);
+
+    reg prev_signal;    // Register to hold the previous state
+
+    always @(posedge clk) begin
+        // Compare previous and current states
+        edge_detected <= (~prev_signal & signal);
+
+        // Update the previous state for the next clock cycle
+        prev_signal <= signal;
+    end
+
+endmodule
+
+Explanation of the Code
+
+    Declarations:
+        prev_signal: A register to store the previous value of signal.
+        edge_detected: Output that indicates when a rising edge is detected.
+
+    Edge Detection Logic:
+        The expression (~prev_signal & signal) evaluates to 1 when:
+            prev_signal is 0 (previous state is low).
+            signal is 1 (current state is high).
+        This condition precisely defines a rising edge.
+
+    Updating prev_signal:
+        prev_signal <= signal; schedules an update to prev_signal with the current value of signal.
+        The update occurs after the current time step, so within this always block execution, prev_signal retains its old value.
+
+Why This Works
+
+    During the Execution of the always Block:
+        prev_signal holds the previous state (from the last clock cycle).
+        signal holds the current state (sampled at the clock edge).
+        You can compare them directly.
+
+    Non-blocking Assignment Behavior:
+        The line prev_signal <= signal; does not immediately change prev_signal.
+        All right-hand side (RHS) expressions in the block use the values of variables before any assignments in the block take effect.
+
+Timing Diagram
+
+Let's visualize how this works over several clock cycles.
+Clock Cycle	signal	prev_signal (before update)	edge_detected
+1	0	0	0
+2	1	0	1 (edge detected)
+3	1	1	0
+4	0	1	0
+5	1	0	1 (edge detected)
+
+    Cycle 1:
+        signal is 0.
+        prev_signal is 0.
+        No edge detected.
+
+    Cycle 2:
+        signal changes to 1.
+        prev_signal is still 0 (hasn't been updated yet).
+        Edge detected: (~0 & 1) = 1.
+
+    Cycle 3:
+        signal remains 1.
+        prev_signal is updated to 1.
+        No edge detected: (~1 & 1) = 0.
+
+    Cycle 4:
+        signal changes to 0.
+        prev_signal is still 1.
+        No rising edge detected.
+
+    Cycle 5:
+        signal changes back to 1.
+        prev_signal is 0 (from previous cycle).
+        Edge detected: (~0 & 1) = 1.
+
+Key Takeaways
+
+    Non-blocking Assignments Are Crucial:
+        They allow you to use the old value of a register within the same always block execution.
+        Ensure that updates to registers do not interfere with computations within the current time step.
+
+    Comparing States:
+        By storing the previous state in a register and using the current input, you can perform comparisons to detect edges or other state changes.
+
+    Order of Operations:
+        In an always block, the order of statements doesn't affect when variables are updated when using non-blocking assignments.
+        All RHS expressions are evaluated first using the values at the beginning of the time step.
+
+Additional Example: Falling Edge Detection
+
+Let's also look at detecting a falling edge (transition from 1 to 0).
+Verilog Code
+
+module falling_edge_detector (
+    input clk,
+    input signal,
+    output reg edge_detected
+);
+
+    reg prev_signal;
+
+    always @(posedge clk) begin
+        edge_detected <= (prev_signal & ~signal);
+
+        prev_signal <= signal;
+    end
+
+endmodule
+
+Explanation
+
+    Edge Detection Logic:
+        The expression (prev_signal & ~signal) evaluates to 1 when:
+            prev_signal is 1 (previous state is high).
+            signal is 0 (current state is low).
+        This condition defines a falling edge.
+
+Understanding Non-blocking vs. Blocking Assignments
+
+    Non-blocking Assignment (<=):
+        Updates the left-hand side (LHS) variable at the end of the time step.
+        Allows for modeling sequential logic (flip-flops).
+        Ensures that the old values are used throughout the always block execution.
+
+    Blocking Assignment (=):
+        Updates the LHS variable immediately.
+        Should be used for combinational logic.
+        Can lead to unintended results in sequential logic if used incorrectly.
+
+Important Note: In sequential always blocks triggered by clock edges (e.g., always @(posedge clk)), always use non-blocking assignments (<=) to prevent race conditions and ensure correct simulation of flip-flop behavior.
+Summary
+
+    Comparing previous and current states within the same always block is possible due to the behavior of non-blocking assignments.
+    Non-blocking assignments allow the old value of a register to be used for calculations in the current time step, even if you assign a new value to it within the same block.
+    This mechanism is essential for designing sequential logic circuits like edge detectors, counters, and state machines.
+
+I hope this re-explanation clarifies how you can compare the previous state and the current state within the same always block in Verilog. If you have any more questions or need further clarification on any part, feel free to ask!
+
