@@ -2,8 +2,10 @@ module top_module(
     input clk,
     input in,
     input reset,    // Synchronous reset
+    output [7:0] out_byte,
     output done
-); 
+); //
+
 
     
     
@@ -18,7 +20,7 @@ module top_module(
             end
             
             rec:begin
-                nstate<= (count==8) ? stop : rec; 
+                nstate<= (count==7) ? stop : rec; 
             end
             
             stop:begin
@@ -36,12 +38,13 @@ module top_module(
         
     end
     
-    reg done_rec;
+    
     reg [3:0] count;
-    initial count=0;
+    reg [7:0] rec_data;
     always @(posedge clk) begin
         
         if(state==rec)begin
+            rec_data[count] <= in;
             count<=count+1;
         end else begin
            count<=0; 
@@ -51,6 +54,7 @@ module top_module(
     
     always@(*)begin
         if(state==fin)begin
+            out_byte<=rec_data;
            done<=1; 
         end else begin
            done<=0; 
@@ -68,4 +72,6 @@ module top_module(
     
     
 
+
 endmodule
+
