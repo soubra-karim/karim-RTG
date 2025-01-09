@@ -6,7 +6,7 @@
 
 
 
-// implementing axi stream
+
 module image_top(
     input ACLK,
     input ARESETn,
