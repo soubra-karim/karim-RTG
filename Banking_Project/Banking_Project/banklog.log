@@ -1,0 +1,44 @@
+Mar 26, 2024 6:14:22 PM banking_project.Bank_server log_file
+INFO: test2||register
+Mar 26, 2024 6:14:24 PM banking_project.Bank_server log_file
+INFO: atm1||Authentication, verification, and key distribution
+Mar 26, 2024 6:14:28 PM banking_project.Bank_server log_file
+INFO: test2||quitting
+Mar 26, 2024 6:15:08 PM banking_project.Bank_server log_file
+INFO: test2||login
+Mar 26, 2024 6:15:09 PM banking_project.Bank_server log_file
+INFO: atm1||Authentication, verification, and key distribution
+Mar 26, 2024 6:15:35 PM banking_project.Bank_server log_file
+INFO: test2||check balance
+Mar 26, 2024 6:15:39 PM banking_project.Bank_server log_file
+INFO: test2||deposit
+Mar 26, 2024 6:15:42 PM banking_project.Bank_server log_file
+INFO: test2||check balance
+Mar 26, 2024 6:15:45 PM banking_project.Bank_server log_file
+INFO: test2||withdraw
+Mar 26, 2024 6:15:48 PM banking_project.Bank_server log_file
+INFO: test2||check balance
+Mar 26, 2024 6:15:56 PM banking_project.Bank_server log_file
+INFO: test2||withdraw
+Mar 26, 2024 6:15:56 PM banking_project.Bank_server log_file
+INFO: test2||withdraw error
+Mar 26, 2024 6:16:06 PM banking_project.Bank_server log_file
+INFO: test2||check balance
+Mar 26, 2024 6:16:15 PM banking_project.Bank_server log_file
+INFO: test2||quitting
+Mar 26, 2024 6:19:47 PM banking_project.Bank_server log_file
+INFO: polina||login
+Mar 26, 2024 6:19:47 PM banking_project.Bank_server log_file
+INFO: atm1||Authentication, verification, and key distribution
+Mar 26, 2024 6:19:50 PM banking_project.Bank_server log_file
+INFO: polina||check balance
+Mar 26, 2024 6:19:53 PM banking_project.Bank_server log_file
+INFO: polina||deposit
+Mar 26, 2024 6:19:57 PM banking_project.Bank_server log_file
+INFO: polina||withdraw
+Mar 26, 2024 6:19:57 PM banking_project.Bank_server log_file
+INFO: polina||withdraw error
+Mar 26, 2024 6:20:01 PM banking_project.Bank_server log_file
+INFO: polina||check balance
+Mar 26, 2024 6:20:03 PM banking_project.Bank_server log_file
+INFO: polina||quitting
