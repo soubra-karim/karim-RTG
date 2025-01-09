@@ -1,7 +1,0 @@
-converting floating point to decimal: https://www.youtube.com/watch?v=LXF-wcoeT0o
-
-explaining IEEE754 floating point: https://www.youtube.com/watch?v=owtK58XiPGo
-
-risc-spec: https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf
-
-arithmetic stuff for FP32: https://www.youtube.com/watch?v=rYkVdJnVJFQ&list=PLlO9sSrh8HrwcDHAtwec1ycV-m50nfUVs
