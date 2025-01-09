@@ -1,0 +1,104 @@
+/* CandidateSearchPage.module.css */
+.candidateSearchPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimum height of the entire viewport */
+  background-color: #f9f9f9;
+  font-family: 'Roboto', sans-serif;
+  overflow: auto; /* Enable scrolling if content overflows */
+}
+
+.searchResultsTitle {
+  font-size: 2rem; /* Larger font size for title */
+  font-weight: 590;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Provide space between title and job listings */
+  width: 100%; /* Full width */
+  text-align: left; /* Center title text */
+}
+
+.jobListingsContainer {
+  width: 100%;
+  max-width: 1200px; /* Or whatever max-width you prefer */
+  margin: 0 auto; /* Center the container */
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 900px;
+  align-items: center; /* Center-align the job cards */
+}
+
+.jobCard {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%; /* Width of each job card - you can adjust this as needed */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between; /* Space between elements in the card */
+  align-items: center; /* Vertically center items in the card */
+}
+
+.jobTitle {
+  font-size: 1.50rem;
+  font-weight: 200;
+  color: #333;
+  flex-grow: 1; /* Allow the title to take up available space */
+}
+
+.jobDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.companyName, .location, .postedDate {
+  font-size: 1.25rem;
+  color: #666;
+  margin: 4px 0; /* Vertical spacing */
+}
+
+.viewJobButton {
+  padding: 10px 20px;
+  background-color: var(--primary-500);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.viewJobButton:hover {
+  background-color: var(--color-dodgerblue);
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.noResults {
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+footer {
+  padding: 1rem 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  width: 100%;
+  /* Removed position absolute to allow footer to be part of the normal document flow */
+}
+
+/* If footer needs to be sticky at the bottom: */
+/* .candidateSearchPage {
+  padding-bottom: 2.5rem; /* Space for the footer */
+/* }
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+} */

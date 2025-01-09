@@ -1,0 +1,18 @@
+.candidateMyProfile,
+
+.candidateMyProfile {
+  width: 100%;
+  position: relative;
+  background-color: var(--gray-scale-white);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 256px;
+  gap: var(--gap-31xl);
+  letter-spacing: normal;
+}
+@media screen and (max-width: 900px) {
+  .candidateMyProfile {
+    gap: var(--gap-31xl);
+  }
+}

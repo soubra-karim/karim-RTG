@@ -1,0 +1,88 @@
+.createJobFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 1850px;
+  margin: 1% auto;
+  padding: 20px;
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 150;
+}
+
+.formRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.formColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 50px;
+}
+
+.formGroup label,
+.formSkill label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="date"],
+.formGroup textarea,
+.formSkill textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.formGroup textarea {
+  height: 678px; /* Adjust the height as needed */
+  resize: vertical;
+}
+
+.formSkill textarea {
+  height: 150px; /* Adjust the height as needed */
+  resize: vertical;
+}
+
+.formButton {
+  padding: 15px 40px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  align-self: center;
+  width: auto;
+  margin-top: 0px;
+  margin-bottom: 29px;
+}
+
+.formButton:hover {
+  background-color: #003580;
+}
+
+@media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+  }
+
+  .formColumn {
+    margin: 0;
+    width: 100%;
+  }
+
+  .formButton {
+    width: 100%;
+  }
+}

@@ -1,0 +1,162 @@
+.heading {
+  width: 100%;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.jobsYouMight {
+  user-select: none;
+  cursor: default;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 500;
+  padding-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 0;
+  text-align: center;
+  width: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.featuredJob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.jobsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.job {
+  user-select: none;
+  cursor: pointer; /* Changed from default because this is now a button */
+  width: 360px;
+  padding: 25px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: var(--font-roboto), sans-serif;
+  position: relative;
+  padding-bottom: 60px; /* Adjust if needed */
+  border: none; /* Remove default button border */
+  outline: none; /* Remove focus outline */
+  box-sizing: border-box; /* Added to account for padding and borders in total width and height */
+  text-align: left; /* Align text to the left inside the button */
+  transition: box-shadow 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.job:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darken the shadow on hover */
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.score {
+  position: absolute;
+  bottom: 30px; /* Position adjusted to place above the buttons */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset by half width to truly center */
+  font-size: 14px;
+  color: #005A9C;
+  text-align: center;
+  width: 100%; /* Set width to 100% of the container */
+}
+
+.interactionIcons {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.likeButton,
+.dislikeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.likeButton:hover {
+  background-color: #4CAF50;
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+.dislikeButton:hover {
+  background-color: #F44336;
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.thumbsupIcon,
+.thumbsdownIcon {
+  width: 24px;
+  height: auto;
+  display: block;
+}
+
+.jobTitle {
+  text-align: left;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 1px;
+  font-weight: bold;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  white-space: nowrap; /* Prevents the text from wrapping */
+  overflow: hidden; /* Hides text that overflows the container */
+  text-overflow: ellipsis; /* Adds ellipsis to text that overflows */
+  display: block; /* Makes it a block-level element to occupy its own line */
+  width: 100%; /* Adjust width as necessary, accounting for padding */
+}
+
+.companyName {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.locationName {
+  font-size: 14px;
+  color: #999;
+}
+
+@media screen and (max-width: 1200px) {
+  .jobsContainer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .job {
+    width: calc(50% - 24px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .job {
+    width: 100%;
+  }
+}

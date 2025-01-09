@@ -1,0 +1,227 @@
+.createAccount,
+.dontHaveAccount,
+
+.signIn {
+  margin: 0;
+  align-self: stretch;
+  font-size: var(--heading-03-size);
+  line-height: 40px;
+  font-weight: 500;
+  color: var(--gray-900);
+}
+.createAccount,
+.dontHaveAccount {
+  font-size: var(--button-button-size);
+  line-height: 24px;
+  color: var(--gray-600);
+}
+.createAccount {
+  font-weight: 500;
+  color: var(--primary-500);
+}
+.signInFrame,
+.textNode {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.signInFrame {
+  width: 100%;
+  flex-direction: column;
+  gap: var(--gap-base);
+}
+.emailAddress {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: var(--button-button);
+  font-size: var(--button-button-size);
+  background-color: transparent;
+  height: 24px;
+  position: relative;
+  line-height: 24px;
+  color: var(--gray-500);
+  text-align: left;
+  display: block;
+  color: var(--black-500);
+}
+.inputField {
+  align-self: stretch;
+  border-radius: var(--br-8xs);
+  background-color: var(--gray-scale-white);
+  border: 1px solid var(--gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-lg);
+}
+.password {
+  width: 100%; /* Full width */
+  border: 0;
+  outline: 0;
+  font-family: var(--button-button);
+  font-size: var(--button-button-size);
+  background-color: transparent;
+  height: 24px;
+  position: relative;
+  line-height: 24px;
+  color: var(--black-500);
+  text-align: left;
+  display: block;
+}
+.fieyeIcon {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.inputField1 {
+  align-self: stretch;
+  border-radius: var(--br-8xs);
+  background-color: var(--gray-scale-white);
+  border: 1px solid var(--gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-xs) var(--padding-lgi) var(--padding-xs)
+    var(--padding-mid);
+  gap: var(--gap-xl);
+}
+.check {
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  border-radius: var(--br-10xs);
+  border: 1px solid var(--primary-200);
+  box-sizing: border-box;
+}
+.rememberMe {
+  position: relative;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-family: var(--button-button);
+  color: var(--gray-500);
+  text-align: left;
+}
+.reminderCheck {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.forgetPassword {
+  position: relative;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--button-button);
+  color: var(--primary-500);
+  text-align: left;
+}
+.buttonInstance,
+.inputFieldWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.inputFieldWrapper {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.primary {
+  position: relative;
+  font-size: var(--button-button-size);
+  line-height: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: var(--button-button);
+  color: var(--gray-scale-white);
+  text-align: left;
+}
+
+.button,
+.mainFrame {
+  display: flex;
+  align-items: flex-start;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-xl) var(--padding-base)
+    var(--padding-2xl);
+  background-color: var(--primary-500);
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--gap-smi);
+}
+.button:hover {
+  background-color: var(--color-dodgerblue);
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Full height of the document */
+  overflow: hidden; /* Prevents scrollbars from appearing */
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* This will align the form to the top */
+  height: calc(100vh - 0px); /* Adjusted for navbar, replace 60px with your navbar's height */
+  width: 100%;
+  padding-top: var(--margin-top-value); /* Replace this variable with your desired margin top value */
+  box-sizing: border-box;
+  overflow-y: auto; /* Allows scrolling if content is taller than the screen */
+}
+
+.mainFrame {
+  width: 577px;
+  flex-direction: column;
+  padding: 0; /* Adjust if needed */
+  box-sizing: border-box;
+  gap: var(--gap-13xl);
+  margin: 175px auto; /* This will center the form horizontally and remove top margin */
+}
+
+
+
+.createAccount {
+  color: #0066ff; /* Example: blue color for link text */
+  cursor: pointer; /* Change cursor to indicate it's clickable */
+  text-decoration: underline; /* Underline to indicate it's clickable */
+}
+
+.createAccount:hover {
+  text-decoration: none; /* Remove underline on hover for a button-like effect */
+}
+@media screen and (max-width: 950px) {
+  .signIn {
+    font-size: var(--font-size-7xl);
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mainFrame {
+    gap: var(--gap-13xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .signIn {
+    font-size: var(--font-size-lgi);
+    line-height: 24px;
+  }
+  .buttonInstance {
+    flex-wrap: wrap;
+  }
+}

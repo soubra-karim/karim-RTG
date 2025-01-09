@@ -1,0 +1,18 @@
+.signIn {
+  width: 100%;
+  position: relative;
+  background-color: var(--gray-scale-white);
+
+  display: flex;
+
+}
+@media screen and (max-width: 975px) {
+  .signIn {
+    gap: var(--gap-163xl);
+  }
+}
+@media screen and (max-width: 700px) {
+  .signIn {
+    gap: var(--gap-163xl);
+  }
+}

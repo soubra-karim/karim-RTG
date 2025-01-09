@@ -1,0 +1,370 @@
+.createAccountFrame {
+  width: 600px;
+  flex-direction: column;
+  padding: 0; /* Adjust if needed */
+  box-sizing: border-box;
+  gap: var(--gap-13xl);
+  margin: 112px auto; 
+  }
+  .alreadyHaveAccount,
+  .createAnEmployer,
+  .logIn {
+    position: relative;
+    font-family: var(--button-button);
+    text-align: left;
+  }
+  .createAnEmployer {
+    margin: 0;
+    align-self: stretch;
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 500;
+    color: var(--gray-900);
+  }
+  .alreadyHaveAccount,
+  .logIn {
+    font-size: var(--button-button-size);
+    line-height: 24px;
+    color: var(--gray-600);
+  }
+  .logIn {
+    width: 51px;
+    font-weight: 500;
+    color: var(--primary-500);
+    display: inline-block;
+  }
+  .alreadyHaveAccountParent,
+  .selectionFrame {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .selectionFrame {
+    flex: 1;
+    flex-direction: column;
+    gap: var(--gap-base);
+    min-width: 229px;
+    max-width: 100%;
+  }
+  .selected {
+    position: relative;
+    font-size: var(--body-small-400-size);
+    line-height: 20px;
+    font-family: var(--button-button);
+    color: var(--gray-scale-700);
+    text-align: left;
+  }
+  .select,
+  .selectionFrameParent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .select {
+    border-radius: var(--br-7xs);
+    background-color: var(--primary-500);
+    border: 1px solid var(--gray-100);
+    justify-content: center;
+    padding: var(--padding-sm) var(--padding-4xs) var(--padding-sm)
+      var(--padding-xs);
+    white-space: nowrap;
+  
+  }
+  .selectionFrameParent {
+    align-self: stretch;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 14px;
+    width: 100%;
+  }
+  .emailAddress {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-family: var(--button-button);
+    font-size: var(--button-button-size);
+    background-color: transparent;
+    height: 24px;
+    position: relative;
+    line-height: 24px;
+    color: var(--gray-500);
+    text-align: left;
+    display: inline-block;
+  }
+  .inputField {
+    flex: 1;
+    border-radius: var(--br-8xs);
+    background-color: var(--gray-scale-white);
+    border: 1px solid var(--gray-100);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--padding-xs) var(--padding-lg);
+    min-width: 168px;
+    width: 100%;
+  }
+  .emailAddress1 {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-family: var(--button-button);
+    font-size: var(--button-button-size);
+    background-color: transparent;
+    height: 24px;
+    position: relative;
+    line-height: 24px;
+    color: var(--gray-500);
+    text-align: left;
+    display: inline-block;
+  }
+  .inputField1,
+  .inputFieldFrame {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .inputField1 {
+    flex: 1;
+    border-radius: var(--br-8xs);
+    background-color: var(--gray-scale-white);
+    border: 1px solid var(--gray-100);
+    box-sizing: border-box;
+    align-items: center;
+    padding: var(--padding-xs) var(--padding-lg);
+    min-width: 168px;
+  }
+  .inputFieldFrame {
+    align-self: stretch;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: var(--gap-xl);
+  }
+  .emailAddress2 {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-family: var(--button-button);
+    font-size: var(--button-button-size);
+    background-color: transparent;
+    height: 24px;
+    position: relative;
+    line-height: 24px;
+    color: var(--gray-500);
+    text-align: left;
+    display: inline-block;
+  }
+  .inputField2 {
+    align-self: stretch;
+    border-radius: var(--br-8xs);
+    background-color: var(--gray-scale-white);
+    border: 1px solid var(--gray-100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--padding-xs) var(--padding-lg);
+  }
+  .phoneNumber {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-family: var(--button-button);
+    font-size: var(--button-button-size);
+    background-color: transparent;
+    height: 24px;
+    position: relative;
+    line-height: 24px;
+    color: var(--gray-500);
+    text-align: left;
+    display: inline-block;
+  }
+  .inputField5 {
+    align-self: stretch;
+    border-radius: var(--br-8xs);
+    background-color: var(--gray-scale-white);
+    border: 1px solid var(--gray-100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--padding-xs) var(--padding-lg);
+  }
+  .password {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-family: var(--button-button);
+    font-size: var(--button-button-size);
+    background-color: transparent;
+    height: 24px;
+    position: relative;
+    line-height: 24px;
+    color: var(--gray-500);
+    text-align: left;
+    display: inline-block;
+  }
+  .fieyeIcon {
+    height: 22px;
+    width: 22px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .inputField3 {
+    align-self: stretch;
+    border-radius: var(--br-8xs);
+    background-color: var(--gray-scale-white);
+    border: 1px solid var(--gray-100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-xs) var(--padding-lgi) var(--padding-xs)
+      var(--padding-mid);
+    gap: var(--gap-xl);
+  }
+  .password1 {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-family: var(--button-button);
+    font-size: var(--button-button-size);
+    background-color: transparent;
+    height: 24px;
+    position: relative;
+    line-height: 24px;
+    color: var(--gray-500);
+    text-align: left;
+    display: inline-block;
+  }
+  .fieyeIcon1 {
+    height: 22px;
+    width: 22px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .inputField4,
+  .inputFieldEmail {
+    align-self: stretch;
+    display: flex;
+    gap: var(--gap-xl);
+  }
+  .inputField4 {
+    border-radius: var(--br-8xs);
+    background-color: var(--gray-scale-white);
+    border: 1px solid var(--gray-100);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-xs) var(--padding-lgi) var(--padding-xs)
+      var(--padding-mid);
+  }
+  .inputFieldEmail {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .primary {
+    position: relative;
+    font-size: var(--button-button-size);
+    line-height: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: var(--button-button);
+    color: var(--gray-scale-white);
+    text-align: left;
+  }
+  .fiarrowRightIcon {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+  }
+  .button {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-base) var(--padding-xl);
+    background-color: var(--primary-500);
+    align-self: stretch;
+    border-radius: var(--br-9xs);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--gap-xs);
+  }
+  .button:hover {
+    background-color: var(--color-dodgerblue);
+  }
+
+  .anotherFrame {
+    margin: 0;
+    width: 620px;
+    align-items: flex-start;
+    padding: 0 var(--padding-xl);
+    gap: var(--gap-13xl);
+    max-width: 100%;
+  }
+.employerCreateAccount {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* This will align the form to the top */
+  height: calc(100vh - 60px); /* Adjusted for navbar, replace 60px with your navbar's height */
+  width: 100%;
+  padding-top: 0; /* Replace this variable with your desired margin top value */
+  box-sizing: border-box;
+  overflow-y: auto; /* Allows scrolling if content is taller than the screen */
+}
+.logIn {
+  /* Add styles to make it look more like a clickable link or button */
+  color: #0066ff; /* Example: blue color for link text */
+  cursor: pointer; /* Change cursor to indicate it's clickable */
+  text-decoration: underline; /* Underline to indicate it's clickable */
+}
+
+.logIn:hover {
+  text-decoration: none; /* Remove underline on hover for a button-like effect */
+}
+.selected {
+  /* Add styles to make it look more like a clickable link or button */
+  position: relative;
+  font-size: var(--button-button-size);
+  line-height: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: var(--button-button);
+  color: var(--gray-scale-white);
+  text-align: left;
+  cursor: pointer; /* Change cursor to indicate it's clickable */
+
+}
+
+.selected:hover {
+  text-decoration: none; /* Remove underline on hover for a button-like effect */
+}
+  @media screen and (max-width: 975px) {
+    .employerCreateAccount {
+      gap: var(--gap-100xl);
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .anotherFrame {
+      gap: var(--gap-13xl);
+    }
+    .employerCreateAccount {
+      gap: var(--gap-100xl);
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .createAnEmployer {
+      font-size: var(--body-large-500-size);
+      line-height: 32px;
+    }
+  }
+  

@@ -1,0 +1,7 @@
+.mapContainer {
+    min-height: 600px; /* Or whatever height you want */
+    height: 70vh;
+    width: calc(75%); /* Assuming you want to maintain a width with some space on both sides */
+    margin: 1rem auto; /* This will add margin on the top and bottom, and center the map horizontally */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow around the map for depth */
+  }

@@ -1,0 +1,183 @@
+.findAJob {
+  user-select: none;
+  cursor: default;
+  margin: 0;
+  width: 652px;
+  height: 128px;
+  position: relative;
+  font-size: inherit;
+  line-height: 64px;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.fisearchIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 24px;
+}
+
+
+
+
+
+
+.container,
+.headerSection,
+.search {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.search {
+  margin: 0;
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--gray-scale-white);
+  box-shadow: var(--search-shadow);
+  border: 1px solid var(--gray-100);
+  flex-direction: row;
+  padding: var(--padding-xs) var(--padding-smi) var(--padding-xs)
+    var(--padding-2xs);
+  row-gap: 20px;
+}
+.container,
+.headerSection {
+  flex-direction: column;
+  max-width: 100%;
+}
+.container {
+  align-self: stretch;
+  gap: var(--gap-13xl);
+}
+.headerSection {
+  flex: 1;
+  box-sizing: border-box;
+  min-width: 441px;
+}
+.illustrationIcon {
+  width: 492px;
+  position: right;
+  max-height: 100%;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.siteLogo {
+  align-self: stretch;
+  background-color: var(--color-whitesmoke-500);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-81xl) var(--padding-281xl);
+  box-sizing: border-box;
+  gap: var(--gap-10xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--display-01-size);
+  color: var(--gray-900);
+  font-family: var(--button-button);
+}
+
+@media screen and (max-width: 1720px) {
+
+  .siteLogo {
+    padding-left: var(--padding-131xl);
+    padding-right: var(--padding-131xl);
+  }
+
+}
+@media screen and (max-width: 1600px) {
+
+  .siteLogo {
+    flex-wrap: wrap;
+  }
+  .illustrationIcon {
+    display: none;
+  }
+}
+@media screen and (max-width: 1275px) {
+  .headerSection {
+    min-width: 100%;
+  }
+  .siteLogo {
+    gap: var(--gap-130xl);
+    padding-left: var(--padding-131xl);
+    padding-right: var(--padding-131xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .findAJob {
+    font-size: var(--font-size-15xl);
+    line-height: 38px;
+  }
+}
+.findJobButton {
+  white-space: nowrap; /* This prevents the text from wrapping */
+  background-color: var(--primary-500);  color: white;
+  border: none;
+  padding: 19px 20px;
+  font-weight: 550;
+  margin-left: 10px; /* Adjust as necessary */
+  border-radius: 5px; /* Adjust as necessary */
+  cursor: pointer;
+  font-size: 1rem; /* Adjust as necessary */
+}
+
+/* Add :hover and :active states for better user experience */
+.findJobButton:hover {
+  background-color: var(--color-dodgerblue);
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.findJobButton:active {
+  background-color: var(--color-dodgerblue);
+}
+.searchChild {
+  height: 33px;
+  width: 1px;
+  position: relative;
+  border-right: 1px solid var(--gray-100);
+  box-sizing: border-box;
+  display: none;
+}
+.fisearchIcon {
+  height: 50px;
+  width: 30px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 24px;
+}
+.search {
+  width: 100%;
+  border-radius: var(--br-8xs);
+  background-color: var(--gray-scale-white);
+  border: 1px solid var(--gray-100);
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: var(--padding-smi) var(--padding-5xl);
+  gap: var(--gap-xs);
+}
+.jobTitleKeyword {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: var(--button-button);
+  font-size: var(--button-button-size);
+  background-color: transparent;
+  /* Adjust the height and padding to fit your design */
+  height: 55px; /* This is an example height; set it to the height of your search bar */
+  padding: 12px 0; /* This will be half of the height if there's no other content/padding */
+  color: var(--gray-400);
+  text-align: left;
+  display: block; /* changed from inline-block to block */
+  box-sizing: border-box; /* Make sure padding and border are included in the height */
+}

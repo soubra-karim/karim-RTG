@@ -1,0 +1,371 @@
+.jobPage {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .jobContent {
+    display: flex; /* Use flexbox to create two columns */
+    flex-direction: row; /* Align children horizontally */
+    gap: 20px; /* Add some space between the columns */
+    padding: 0px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+  }
+  
+  .jobDetailColumn, .additionalContentColumn {
+    flex: 0 0 50%; /* Each column takes up half of the .jobContent width */
+    display: flex;
+    flex-direction: column;
+    /* If you want exact halves, you can use flex: 0 0 50%; instead */
+  }
+
+  .jobDetailHeader,
+  .jobDescriptionSection,
+  .jobDetailSection {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    width: 90%;
+  }
+  
+  .jobTitle {
+    font-size: 2.5rem; /* Increase font size */
+    font-weight: bold;
+    margin-bottom: 1rem; /* Increase margin */
+  }
+  
+  .jobCompany, 
+  .jobLocation, 
+  .jobPostedDate, 
+  .jobApplicationDeadline, 
+  .jobExperienceRequired {
+    font-size: 1.25rem; /* Increase font size */
+    color: #666;
+    margin-bottom: 0.5rem; /* Increase margin */
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold;
+    margin-bottom: 1.5rem; /* Increase margin */
+  }
+  
+  /* Add additional styles as necessary */
+  .candidateCard {
+    width: 80%;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  
+  .candidateName {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .candidatePhoneNumber, .candidateEmail {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .viewCandidateButton {
+    background-color: var(--primary-500);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .viewCandidateButton:hover {
+    background-color: var(--color-dodgerblue);
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+  }
+
+  .interactionIcons {
+    align-self: center; /* Center the icons container */
+    display: flex;
+    gap: 8px; /* Space between buttons */
+    margin-bottom: 16px;
+  }
+  
+  /* Button styles */
+  .likeButton,
+  .dislikeButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-flex; /* Flex container for the buttons */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+    padding: 4px; /* Padding around the icons */
+    border-radius: 4px; /* Rounded corners for the buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for the hover effect */
+  }
+  
+  .likeButton:hover {
+    background-color: #4CAF50; /* Green background on hover for like button */
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+  }
+  
+  .dislikeButton:hover {
+    background-color: #F44336; /* Red background on hover for dislike button */
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Icon styles */
+  .thumbsupIcon,
+  .thumbsdownIcon {
+    width: 24px; /* Set your desired icon size */
+    height: auto;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold;
+    margin-bottom: 1.5rem; /* Increase margin */
+  }
+  .actionButtons {
+    display: flex; /* Use flexbox to lay out the children */
+    flex-direction: column; /* Stack children vertically */
+    align-items: right; /* Center children horizontally */
+    width: 25%; /* Take the full width of the parent */
+  }
+
+  .recommendationsHeading {
+
+    font-size: 2rem;
+    font-weight: 590;
+    color: #333;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+  }
+  .list {
+    margin-left: 20px;
+  }
+
+  .listItem {
+    background-color: #fff;
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.5;
+  }
+
+
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .digitalMarketing,
+  .digitalMarketing1,
+  .digitalMarketing2 {
+    animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+    display: inline-block;
+  }
+  
+  .digitalMarketing {
+    animation: bounce 1.5s infinite; /* Increased from 1.2s to 2s */
+  }
+  
+  .digitalMarketing1 {
+    animation: bounce 1.5s infinite 0.2s; /* Increased from 1.2s to 2s */
+  }
+  
+  .digitalMarketing2 {
+    animation: bounce 1.5s infinite 0.4s; /* Increased from 1.2s to 2s */
+  }
+  
+  .loadingContainer {
+    width: 100%;
+    background-color: var(--gray-scale-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 551px);
+    box-sizing: border-box;
+    gap: var(--gap-43xl);
+    letter-spacing: normal;
+  }
+  
+  
+  .digitalMarketing,
+  .digitalMarketing1,
+  .digitalMarketing2 {
+    height: 80px;
+    width: 32px;
+    position: relative;
+    border-right: 8px solid #ff287b;
+    box-sizing: border-box;
+    margin-right: 8px;
+    border-radius: 3px;
+  }
+  .digitalMarketing1,
+  .digitalMarketing2 {
+    margin-right: 8px;
+    height: 64px;
+    border-right: 8px solid #ffa600;
+  
+  }
+  .digitalMarketing2 {
+    height: 44px;
+    margin-right: 8px;
+    border-right: 8px solid var(--color-dodgerblue);
+  
+  }
+  .sitelogo1 {
+    align-self: stretch;
+    width: 0;
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .sitelogo {
+    height: 52px;
+    width: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-3xs);
+    z-index: 1;
+  }
+  .jobsync {
+    user-select: none;
+    cursor: default;
+    position: relative;
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 600;
+    font-family: var(--button-button);
+    color: var(--gray-900);
+    white-space: nowrap;
+    margin: 0 0 0 0px;
+    margin-left: 0px;
+  }
+  .categoryIconGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .jobDescriptionContent {
+    margin-top: 1rem;
+  }
+  
+  .jobDescriptionParagraph, .jobDescriptionListItem {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    text-align: justify;
+  }
+  .jobDescriptionSection {
+    /* ... existing styles ... */
+    /* Increase padding inside the box for larger overall size */
+    padding: 30px; /* Adjust as needed */
+  }
+  
+  .jobOverviewContainer {
+    display: flex;
+    justify-content: space-evenly; /* Adjust the space distribution */
+    align-items: center;
+    margin-top: 20px;
+    /* Reduce the space between sections if necessary */
+    gap: 15px; /* Adjust this value to bring sections closer together */
+  }
+  
+  .jobPosted,
+  .jobExpire,
+  .experience,
+  .location {
+    flex-basis: 20%; /* Adjust this basis as needed to control the initial width of each section */
+    text-align: center;
+    margin: 10px; /* Adjust margins to control space between sections */
+  }
+  
+  .icon {
+    display: block; /* Icons need to be block-level for margins to apply */
+    margin: 0 auto 10px; /* Center the icon and add space below */
+    width: 40px; /* Increase size as necessary */
+    height: 40px; /* Increase size as necessary */
+  }
+  
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .subHeading {
+    font-size: 1.1rem; /* Increase font size */
+    color: #555; /* Adjust color as needed */
+    margin-bottom: 5px;
+  }
+  
+  .date,
+  .experienceLevel,
+  .locationDetail  {
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: bold;
+    color: #000; /* Adjust color as needed */
+  }
+  
+  /* You can remove the media query if you do not need responsiveness */
+  @media (max-width: 768px) {
+    .jobOverviewContainer {
+      flex-direction: column;
+    }
+  }
+  
+  .skillsContainer {
+    display: flex; /* Use flexbox to layout skill boxes */
+    flex-wrap: wrap; /* Allow skill boxes to wrap */
+    gap: 10px; /* Add some space between skill boxes */
+  }
+  
+  .skillBox {
+    background-color: #e8e8e8ca; /* Light grey background */
+    padding: 5px 10px; /* Padding inside the skill boxes */
+    border-radius: 5px; /* Rounded corners */
+    font: roboto;
+    font-size: 0.875rem; /* Smaller font size */
+    color:#26ba45; /* Green font color */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12); /* Add a subtle shadow for depth */
+  }

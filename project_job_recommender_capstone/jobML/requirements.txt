@@ -1,0 +1,6 @@
+psycopg2
+openai
+PyPDF2
+spacy
+django_extensions
+npm

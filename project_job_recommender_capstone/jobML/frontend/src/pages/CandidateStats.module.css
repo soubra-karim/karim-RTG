@@ -1,0 +1,39 @@
+/* Assuming CandidateStats.module.css has styles for .candidateDashboard */
+.candidateDashboard {
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: flex-start; /* Aligns children to the start of the container */
+    height: calc(90vh); /* Adjust this calculation as needed */
+  }
+  .searchResultsTitle {
+    font-size: 2rem; /* Larger font size for title */
+    font-weight: 590;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 13%;
+    width: 100%; /* Full width */
+    text-align: left; /* Center title text */
+  }
+  .mapTitle {
+    font-size: 2rem; /* Larger font size for title */
+    font-weight: 590;
+    color: #333;
+    margin-top: 10px;
+    margin-left: 13%;
+    width: 100%; /* Full width */
+    text-align: left; /* Center title text */
+  }
+  .mapContainer {
+    flex-grow: 1; /* Allows the map container to grow and fill available space */
+    width: calc(100% - 2rem); /* Maintains a width with some space on both sides */
+    margin: 2rem auto; /* Adds margin on the top and bottom, and centers the map horizontally */
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the map */
+  }
+  
+  @media screen and (max-width: 900px) {
+    .candidateDashboard {
+      gap: 18px 37px;
+    }
+  }

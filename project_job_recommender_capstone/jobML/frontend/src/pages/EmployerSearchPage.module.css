@@ -1,0 +1,425 @@
+.label {
+  position: relative;
+  line-height: 28px;
+  font-weight: 500;
+}
+.featuredBadge,
+.label1 {
+  position: relative;
+  line-height: 20px;
+}
+.label2 {
+  align-self: stretch;
+  width: 36px;
+  display: none;
+}
+.div,
+.label2,
+.label3 {
+  position: relative;
+  line-height: 20px;
+}
+.div {
+  align-self: stretch;
+  width: 5px;
+  display: none;
+}
+.label3 {
+  width: 36px;
+}
+.div1,
+.label3,
+.label4 {
+  align-self: stretch;
+  display: none;
+}
+.div1 {
+  width: 5px;
+  position: relative;
+  line-height: 20px;
+}
+.label4 {
+  width: 36px;
+}
+.div2,
+.label4,
+.label5 {
+  position: relative;
+  line-height: 20px;
+}
+.div2 {
+  align-self: stretch;
+  width: 5px;
+  display: none;
+}
+.label5 {
+  width: 36px;
+}
+.div3,
+.label5,
+.label6 {
+  align-self: stretch;
+  display: none;
+}
+.div3 {
+  width: 5px;
+  position: relative;
+  line-height: 20px;
+}
+.label6 {
+  width: 36px;
+}
+.div4,
+.label6,
+.label7 {
+  position: relative;
+  line-height: 20px;
+}
+.div4 {
+  align-self: stretch;
+  width: 5px;
+  display: none;
+}
+.label7 {
+  width: 36px;
+}
+.div5,
+.label7,
+.label8 {
+  align-self: stretch;
+  display: none;
+}
+.div5 {
+  width: 5px;
+  position: relative;
+  line-height: 20px;
+}
+.label8 {
+  width: 36px;
+}
+.div6,
+.label8,
+.label9 {
+  position: relative;
+  line-height: 20px;
+}
+.div6 {
+  align-self: stretch;
+  width: 5px;
+  display: none;
+}
+.label9 {
+  color: var(--gray-900);
+}
+.breadcrumb,
+.process {
+  display: flex;
+  flex-direction: row;
+}
+.process {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  text-align: left;
+  font-size: var(--body-small-500-size);
+  color: var(--gray-500);
+}
+.breadcrumb {
+  width: 1934px;
+  background-color: var(--gray-50);
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-5xl) var(--padding-278xl) var(--padding-5xl)
+    var(--padding-281xl);
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+  max-width: 101%;
+  flex-shrink: 0;
+}
+.headerContainer,
+.unitedKingdomofGreatBritain {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.headerContainer {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0;
+}
+.unitedKingdomofGreatBritain {
+  flex: 1;
+  background-color: var(--gray-50);
+  justify-content: center;
+  padding: 0 0 var(--padding-13xl);
+}
+.california,
+.jobParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.california {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 var(--padding-5xs);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.jobParent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-5xl);
+  max-width: calc(100% - 179px);
+}
+.monthPickerLabelText {
+  height: 1005px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.daysRemaining {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-136xl);
+  max-width: 100%;
+}
+.fiarrowRightIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  transform: rotate(-180deg);
+}
+.iconButton {
+  height: 48px;
+  width: 48px;
+  border-radius: var(--br-65xl);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs);
+  box-sizing: border-box;
+  transform: rotate(180deg);
+}
+.previousPageButton {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.pagination1 {
+  flex: 1;
+  border-radius: var(--br-31xl);
+  background-color: var(--primary-500);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-sm);
+  color: var(--gray-scale-white);
+}
+.div7 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.pagination2 {
+  flex: 1;
+  border-radius: var(--br-31xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-sm);
+}
+.div8 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.pagination3 {
+  border-radius: var(--br-31xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-sm) var(--padding-sm) var(--padding-sm)
+    var(--padding-mini);
+}
+.div9 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.pagination4 {
+  border-radius: var(--br-31xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-sm) var(--padding-sm) var(--padding-sm)
+    var(--padding-mini);
+}
+.div10 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.pages,
+.pagination5 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+.pagination5 {
+  border-radius: var(--br-31xl);
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-sm);
+}
+.pages {
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 156px;
+}
+.fiarrowRightIcon1 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.iconButton1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs);
+  background-color: var(--primary-50);
+  height: 48px;
+  width: 48px;
+  border-radius: var(--br-65xl);
+  display: flex;
+  box-sizing: border-box;
+}
+.daysLeftCounterText,
+.iconButton1,
+.pagination {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.pagination {
+  width: 352px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-5xs);
+  max-width: 100%;
+}
+.daysLeftCounterText {
+  width: 531px;
+}
+.calendarblank,
+.daysLeftCounterText,
+.kK {
+  display: flex;
+  max-width: 100%;
+}
+.calendarblank {
+  width: 1499px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-49xl);
+}
+.kK {
+  width: 1741px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--body-small-500-size);
+  color: var(--gray-600);
+  font-family: var(--button-button);
+}
+.employerSearchPage,
+.headerGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.headerGroup {
+  align-self: stretch;
+  align-items: flex-end;
+  padding: 0 0 var(--padding-49xl);
+  box-sizing: border-box;
+  gap: var(--gap-4xl);
+  max-width: 100%;
+}
+.employerSearchPage {
+  width: 100%;
+  position: relative;
+  background-color: var(--gray-scale-white);
+  overflow: hidden;
+  align-items: flex-start;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--body-large-500-size);
+  color: var(--gray-900);
+  font-family: var(--button-button);
+}
+@media screen and (max-width: 1275px) {
+  .breadcrumb {
+    padding-left: var(--padding-131xl);
+    padding-right: var(--padding-129xl);
+    box-sizing: border-box;
+  }
+  .daysRemaining {
+    gap: var(--gap-136xl);
+  }
+  .headerGroup {
+    padding-bottom: var(--padding-10xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 900px) {
+  .breadcrumb {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: var(--padding-56xl);
+    padding-right: var(--padding-55xl);
+    box-sizing: border-box;
+  }
+  .jobParent {
+    max-width: 100%;
+  }
+  .monthPickerLabelText {
+    display: none;
+  }
+  .daysRemaining {
+    gap: var(--gap-136xl);
+  }
+  .calendarblank {
+    gap: var(--gap-49xl);
+  }
+  .headerGroup {
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .daysRemaining {
+    gap: var(--gap-136xl);
+  }
+  .calendarblank {
+    gap: var(--gap-49xl);
+  }
+}

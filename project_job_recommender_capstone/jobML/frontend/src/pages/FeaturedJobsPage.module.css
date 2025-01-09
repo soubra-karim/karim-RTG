@@ -1,0 +1,229 @@
+.jobPage {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .jobContent {
+    flex: 1; /* Take up remaining vertical space */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center horizontally */
+  }
+  .jobDetailHeader {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Align children to both ends */
+    align-items: center; /* Align children vertically */
+  }
+  
+  .findJobButton {
+    white-space: nowrap;
+    background-color: var(--primary-500);  
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 550;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    align-self: flex-end; /* Align button to the end */
+    margin-left: auto; /* Push the button to the right */
+    margin-right: 12px;
+  }
+  .jobDetailHeader,
+  .jobDescriptionSection,
+  .jobDetailSection {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .jobTitle {
+    font-size: 2.5rem; /* Increase font size */
+    font-weight: bold;
+    margin-bottom: 1rem; /* Increase margin */
+  }
+  
+  .jobCompany, 
+  .jobLocation, 
+  .jobPostedDate, 
+  .jobApplicationDeadline, 
+  .jobExperienceRequired {
+    font-size: 1.25rem; /* Increase font size */
+    color: #666;
+    margin-bottom: 0.5rem; /* Increase margin */
+  }
+  
+  .jobDescription {
+    font-size: 1.25rem; /* Increase font size */
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold;
+    margin-bottom: 1.5rem; /* Increase margin */
+  }
+  
+  /* Add additional styles as necessary */
+  .rating {
+    font-size: 1.25rem; /* Increase font size */
+    color: #666;
+    margin-bottom: 0.5rem; /* Increase margin */
+  }
+
+  .jobExperienceRequired {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .progressContainer {
+    position: relative; /* Set relative positioning for the progress bar container */
+  }
+  
+  .jobConfidenceProgress {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #eee;
+  }
+  
+  .jobConfidenceProgress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 10px;
+  }
+  
+  .jobConfidenceProgress::-webkit-progress-value {
+    background: linear-gradient(
+      to right,
+      #f6d365 0%, /* Yellow */
+      #f06588 100% /* Pink */
+    );
+    border-radius: 10px;
+  }
+  
+  .jobConfidenceProgress::-moz-progress-bar {
+    background: linear-gradient(
+      to right,
+      #f6d365 0%, /* Yellow */
+      #f06588 100% /* Pink */
+    );
+    border-radius: 10px;
+  }
+  
+  .percentageLabel {
+    position: absolute; /* Absolute positioning relative to the progressContainer */
+    right: 0; /* Align to the far right */
+    top: -58px; /* Align to the top */
+    height: 20px; /* Same height as the progress bar for vertical centering */
+    line-height: 20px; /* Center the text vertically */
+    padding: 0 10px; /* Padding on the right side */
+    font-size: 2rem; /* Larger font size */
+    color:#308cf2; /* Font color, can be adjusted */
+    font-weight: bold; /* Bold font weight */
+    white-space: nowrap; /* Prevents the text from wrapping */
+  }
+
+  .skillsContainer {
+    display: flex; /* Use flexbox to layout skill boxes */
+    flex-wrap: wrap; /* Allow skill boxes to wrap */
+    gap: 10px; /* Add some space between skill boxes */
+  }
+  
+  .skillBox {
+    background-color: #e8e8e8ca; /* Light grey background */
+    padding: 5px 10px; /* Padding inside the skill boxes */
+    border-radius: 5px; /* Rounded corners */
+    font: roboto;
+    font-size: 0.875rem; /* Smaller font size */
+    color:#26ba45; /* Green font color */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12); /* Add a subtle shadow for depth */
+  }
+
+  .jobDescriptionContent {
+    margin-top: 1rem;
+  }
+  
+  .jobDescriptionParagraph, .jobDescriptionListItem {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    text-align: justify;
+  }
+  
+  .jobDescriptionListItem {
+    margin-left: 20px; /* Indent list items */
+    display: block; /* Ensure it's displayed as a block element */
+  }
+
+
+ .jobDescriptionSection {
+  /* ... existing styles ... */
+  /* Increase padding inside the box for larger overall size */
+  padding: 30px; /* Adjust as needed */
+}
+
+.jobOverviewContainer {
+  display: flex;
+  justify-content: space-evenly; /* Adjust the space distribution */
+  align-items: center;
+  margin-top: 20px;
+  /* Reduce the space between sections if necessary */
+  gap: 15px; /* Adjust this value to bring sections closer together */
+}
+
+.jobPosted,
+.jobExpire,
+.experience,
+.location {
+  flex-basis: 20%; /* Adjust this basis as needed to control the initial width of each section */
+  text-align: center;
+  margin: 10px; /* Adjust margins to control space between sections */
+}
+
+.icon {
+  display: block; /* Icons need to be block-level for margins to apply */
+  margin: 0 auto 10px; /* Center the icon and add space below */
+  width: 40px; /* Increase size as necessary */
+  height: 40px; /* Increase size as necessary */
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.subHeading {
+  font-size: 1.1rem; /* Increase font size */
+  color: #555; /* Adjust color as needed */
+  margin-bottom: 5px;
+}
+
+.date,
+.experienceLevel,
+.locationDetail  {
+  font-size: 1.2rem; /* Increase font size */
+  font-weight: bold;
+  color: #000; /* Adjust color as needed */
+}
+
+/* You can remove the media query if you do not need responsiveness */
+@media (max-width: 768px) {
+  .jobOverviewContainer {
+    flex-direction: column;
+  }
+}

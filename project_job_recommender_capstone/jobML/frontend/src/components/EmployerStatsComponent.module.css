@@ -1,0 +1,120 @@
+statsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the boxes */
+  align-items: flex-start; /* Aligns items to the start of the flex line */
+  padding: 20px;
+  gap: 20px; /* Sets the gap between the boxes */
+  margin: 10px auto; /* Centers the container with automatic horizontal margins */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  width: 80%;
+}
+
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the boxes */
+  align-items: flex-start; /* Aligns items to the start of the flex line */
+  margin: 0 auto; /* Centers the container with automatic horizontal margins */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  width: 100%;
+}
+
+.statsBox {
+  flex: 0 0 calc(25% - (20px + 20px / 4)); /* Adjusts flex-basis for 3 boxes per row, accounting for the gap */
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  text-align: right;
+  font-size: 16px;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Align content to the start of the box */
+
+}
+
+.statsBoxVertical {
+  padding: 20px;
+  flex-direction: column;
+}
+
+.statsBox2 {
+  flex: 0 0 calc(66.666% - (20px + 20px / 3)); /* Adjusts flex-basis for 3 boxes per row, accounting for the gap */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+.statsBox1 {
+  flex: 0 0 calc(33.333% - (20px + 20px / 3)); /* Adjusts flex-basis for 3 boxes per row, accounting for the gap */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+.statValue {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.statLabel {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .statsBox,
+  .statsBox2,
+  .statsBox1 {
+    flex-basis: calc(50% - 20px); /* Adjust for 2 boxes per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .statsBox,
+  .statsBox2,
+  .statsBox1 {
+    flex-basis: 100%; /* Full width for small screens */
+    margin-bottom: 20px; /* Adds space between stacked boxes */
+  }
+}
+.statsGroup {
+    background-color: #3c90ff33; /* Blue background for the group */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for the group */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for the group */
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Gap between the boxes */
+    justify-content: center;
+    margin-left: auto; /* Center the group horizontally */
+    margin-right: auto; /* Center the group horizontally */  }
+
+  .statsGroup2 {
+    background-color: #ffffff; /* Blue background for the group */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for the group */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for the group */
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Gap between the boxes */
+    justify-content: center;
+    margin-left: auto; /* Center the group horizontally */
+    margin-right: auto; /* Center the group horizontally */
+    }
+  .statsGroup,
+  .statsGroup2 {
+    /* ... existing styles ... */
+    margin-bottom: 20px; /* This will add a margin to the bottom of both groups */
+  }
+  .image {
+    margin-right: 10px; /* Add some space between the image and the text */
+    width: 50px; /* Adjust as needed */
+    height: auto;
+  }

@@ -1,0 +1,887 @@
+
+.settings {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: var(--heading-04-size);
+  line-height: 32px;
+  font-weight: 500;
+  font-family: var(--button-button);
+  color: var(--gray-900);
+  text-align: left;
+}
+.candidatesettingsbutton {
+  height: 1px;
+  width: 984px;
+  position: relative;
+  border-top: 1px solid var(--gray-100);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.userIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.personal {
+  position: relative;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--button-button);
+  color: var(--gray-500);
+  text-align: left;
+}
+.tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-xl);
+  gap: var(--gap-5xs);
+}
+.usercircleIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.personal1 {
+  position: relative;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--button-button);
+  color: var(--gray-500);
+  text-align: left;
+}
+.tab1 {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs) var(--padding-xl);
+  gap: var(--gap-5xs);
+}
+.globesimpleIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.personal2 {
+  position: relative;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--button-button);
+  color: var(--gray-500);
+  text-align: left;
+}
+.tab2 {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs) var(--padding-xl);
+  gap: var(--gap-5xs);
+}
+.gearsixIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.personal3 {
+  position: relative;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-weight: 600;
+  font-family: var(--button-button);
+  color: var(--primary-500);
+  text-align: left;
+}
+.tab3 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-mid) var(--padding-xs)
+    var(--padding-xl);
+  background-color: var(--gray-scale-white);
+  box-shadow: 0-2px 0#0a65cc inset;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  white-space: nowrap;
+}
+.tab3:hover {
+  background-color: var(--color-gainsboro-100);
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+.candidatesettingsbuttonParent,
+.settingsParent,
+.tabParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.tabParent {
+  align-items: flex-start;
+  gap: var(--gap-xs);
+  margin-left: -984px;
+}
+.candidatesettingsbuttonParent,
+.settingsParent {
+  align-self: stretch;
+  align-items: flex-end;
+}
+.settingsParent {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-base);
+  flex-shrink: 0;
+}
+.primary {
+  position: relative;
+  font-size: var(--button-button-size);
+  line-height: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: var(--button-button);
+  color: var(--gray-scale-white);
+  text-align: left;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-xl) var(--padding-xs)
+    var(--padding-5xl);
+  background-color: var(--primary-500);
+  border-radius: var(--br-10xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.button1:hover,
+.button2:hover,
+.button:hover {
+  background-color: var(--color-dodgerblue);
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+.candidateSettingsChild {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  border-top: 1px solid var(--gray-100);
+  box-sizing: border-box;
+}
+.checkNotifyMe {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--body-large-500-size);
+  line-height: 28px;
+  font-weight: 500;
+  font-family: var(--button-button);
+  color: var(--gray-900);
+  text-align: left;
+}
+.check {
+  accent-color: #0a65cc;
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  border-radius: var(--br-10xs);
+  min-height: 20px;
+}
+.notifyMeWhen {
+  flex: 1;
+  position: relative;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-family: var(--button-button);
+  color: var(--gray-900);
+  text-align: left;
+  display: inline-block;
+  max-width: calc(100% - 28px);
+}
+.frameCheckNotify {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  min-width: 314px;
+  max-width: 100%;
+}
+.check1 {
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  border-radius: var(--br-10xs);
+  border: 1px solid var(--primary-200);
+  box-sizing: border-box;
+}
+.notifyMeWhen1 {
+  flex: 1;
+  position: relative;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-family: var(--button-button);
+  color: var(--gray-500);
+  text-align: left;
+  display: inline-block;
+  min-width: 230px;
+  max-width: 100%;
+}
+.buttonXCircle,
+.frameNotifications {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.buttonXCircle {
+  flex: 1;
+  gap: var(--gap-5xs);
+  min-width: 314px;
+}
+.frameNotifications {
+  align-self: stretch;
+  flex-wrap: wrap;
+  gap: var(--gap-lg);
+}
+.check2 {
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  border-radius: var(--br-10xs);
+  border: 1px solid var(--primary-200);
+  box-sizing: border-box;
+}
+.notifyMeWhen2 {
+  flex: 1;
+  position: relative;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-family: var(--button-button);
+  color: var(--gray-500);
+  text-align: left;
+  display: inline-block;
+  min-width: 224px;
+  max-width: 100%;
+}
+.checkParent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  min-width: 314px;
+  max-width: 100%;
+}
+.check3 {
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  border-radius: var(--br-10xs);
+  min-height: 20px;
+}
+.notifyMeWhen3 {
+  flex: 1;
+  position: relative;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-family: var(--button-button);
+  color: var(--gray-900);
+  text-align: left;
+  display: inline-block;
+  max-width: calc(100% - 28px);
+}
+.checkGroup,
+.frameNotifications1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.checkGroup {
+  flex: 1;
+  gap: var(--gap-5xs);
+  min-width: 314px;
+}
+.frameNotifications1 {
+  align-self: stretch;
+  flex-wrap: wrap;
+  gap: var(--gap-lg);
+}
+.check4 {
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  border-radius: var(--br-10xs);
+  min-height: 20px;
+}
+.notifyMeWhen4 {
+  flex: 1;
+  position: relative;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-family: var(--button-button);
+  color: var(--gray-900);
+  text-align: left;
+  display: inline-block;
+  max-width: calc(100% - 28px);
+}
+.checkContainer,
+.checkNotifyMeExpiredInner {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.checkContainer {
+  flex: 1;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.checkNotifyMeExpiredInner {
+  width: 483px;
+  align-items: center;
+  justify-content: center;
+}
+.checkNotifyMeExpired,
+.notificationSettings {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  max-width: 100%;
+}
+.notificationSettings {
+  gap: var(--gap-xl);
+  flex-shrink: 0;
+}
+.candidateSettingsItem {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  border-top: 1px solid var(--gray-100);
+  box-sizing: border-box;
+}
+.role,
+.text {
+  position: relative;
+  font-family: var(--button-button);
+  color: var(--gray-900);
+  text-align: left;
+  display: inline-block;
+}
+.text {
+  align-self: stretch;
+  height: 28px;
+  font-size: var(--body-large-500-size);
+  line-height: 28px;
+  font-weight: 500;
+}
+.role {
+  height: 20px;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+}
+.briefcaseIcon,
+.jobTittleKeyword {
+  position: absolute;
+  top: calc(50% - 12px);
+}
+.jobTittleKeyword {
+  left: 54px;
+  font-size: var(--button-button-size);
+  line-height: 24px;
+  font-family: var(--button-button);
+  color: var(--gray-400);
+  text-align: left;
+}
+.briefcaseIcon {
+  left: 18px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.inputField1 {
+  align-self: stretch;
+  height: 48px;
+  position: relative;
+  border-radius: var(--br-8xs);
+  background-color: var(--gray-scale-white);
+  border: 1px solid var(--gray-100);
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.inputField {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  min-width: 314px;
+  max-width: 100%;
+}
+.location {
+  height: 20px;
+  position: relative;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-family: var(--button-button);
+  color: var(--gray-900);
+  text-align: left;
+  display: inline-block;
+}
+.jobTittleKeyword1,
+.mappinlineIcon {
+  position: absolute;
+  top: calc(50% - 12px);
+}
+.jobTittleKeyword1 {
+  left: 54px;
+  font-size: var(--button-button-size);
+  line-height: 24px;
+  font-family: var(--button-button);
+  color: var(--gray-400);
+  text-align: left;
+}
+.mappinlineIcon {
+  left: 18px;
+  width: 24px;
+  height: 24px;
+}
+.inputField3 {
+  align-self: stretch;
+  height: 48px;
+  position: relative;
+  border-radius: var(--br-8xs);
+  background-color: var(--gray-scale-white);
+  border: 1px solid var(--gray-100);
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.inputField2,
+.inputFieldParent,
+.textParent {
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.inputField2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+  min-width: 314px;
+}
+.inputFieldParent,
+.textParent {
+  align-self: stretch;
+  gap: var(--gap-lg);
+}
+.inputFieldParent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.textParent {
+  display: none;
+  flex-direction: column;
+}
+.primary1 {
+  position: relative;
+  font-size: var(--button-button-size);
+  line-height: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: var(--button-button);
+  color: var(--gray-scale-white);
+  text-align: left;
+}
+.button1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-xl) var(--padding-xs)
+    var(--padding-5xl);
+  background-color: var(--primary-500);
+  border-radius: var(--br-10xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.candidateSettingsInner,
+.text1 {
+  align-self: stretch;
+  position: relative;
+}
+.candidateSettingsInner {
+  height: 1px;
+  border-top: 1px solid var(--gray-100);
+  box-sizing: border-box;
+}
+.text1 {
+  height: 24px;
+  font-size: var(--button-button-size);
+  line-height: 24px;
+  font-weight: 500;
+  font-family: var(--button-button);
+  color: var(--gray-900);
+  text-align: left;
+  display: inline-block;
+}
+.circle {
+  top: calc(50% - 7px);
+  right: 4px;
+  border-radius: var(--br-xl);
+  background-color: var(--gray-scale-white);
+  width: 14px;
+  height: 14px;
+}
+.circle,
+.switch,
+.yes {
+  position: absolute;
+}
+.switch {
+  top: 13px;
+  left: 18px;
+  border-radius: var(--br-21xl);
+  background-color: var(--primary-500);
+  width: 36px;
+  height: 22px;
+}
+.yes {
+  top: 14px;
+  left: 62px;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--button-button);
+  color: var(--primary-500);
+  text-align: left;
+  display: inline-block;
+  width: 32px;
+}
+.selectChild {
+  position: absolute;
+  top: 7.5px;
+  left: 105.5px;
+  border-right: 1px solid var(--gray-100);
+  box-sizing: border-box;
+  width: 1px;
+  height: 33px;
+}
+.yourProfileIs {
+  position: absolute;
+  top: 14px;
+  left: 118px;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-family: var(--button-button);
+  color: var(--gray-600);
+  text-align: left;
+}
+.select {
+  align-self: stretch;
+  height: 48px;
+  position: relative;
+  border-radius: var(--br-7xs);
+  background-color: var(--gray-scale-white);
+  border: 1px solid var(--gray-100);
+  box-sizing: border-box;
+}
+.textGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  min-width: 312px;
+  max-width: 100%;
+}
+.text2 {
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  font-size: var(--button-button-size);
+  line-height: 24px;
+  font-weight: 500;
+  font-family: var(--button-button);
+  color: var(--gray-900);
+  text-align: left;
+  display: inline-block;
+}
+.circle1 {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 4px;
+  border-radius: var(--br-xl);
+  background-color: var(--gray-scale-white);
+  width: 14px;
+  height: 14px;
+}
+.switch1 {
+  top: 13px;
+  left: 18px;
+  border-radius: var(--br-21xl);
+  background-color: var(--gray-200);
+  width: 36px;
+  height: 22px;
+}
+.no,
+.selectItem,
+.switch1 {
+  position: absolute;
+}
+.no {
+  top: 14px;
+  left: 62px;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--button-button);
+  color: var(--danger-500);
+  text-align: left;
+  display: inline-block;
+  width: 32px;
+}
+.selectItem {
+  top: 7.5px;
+  left: 105.5px;
+  border-right: 1px solid var(--gray-100);
+  box-sizing: border-box;
+  width: 1px;
+  height: 33px;
+}
+.yourResumeIs {
+  position: absolute;
+  top: 14px;
+  left: 118px;
+  font-size: var(--body-small-500-size);
+  line-height: 20px;
+  font-family: var(--button-button);
+  color: var(--gray-600);
+  text-align: left;
+}
+.select1 {
+  align-self: stretch;
+  height: 48px;
+  position: relative;
+  border-radius: var(--br-7xs);
+  background-color: var(--gray-scale-white);
+  border: 1px solid var(--gray-100);
+  box-sizing: border-box;
+}
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  min-width: 312px;
+  max-width: 100%;
+}
+.frameParent,
+.lineDiv {
+  align-self: stretch;
+  display: none;
+}
+.frameParent {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+}
+.lineDiv {
+  height: 1px;
+  position: relative;
+  border-top: 1px solid var(--gray-100);
+  box-sizing: border-box;
+}
+.primary2 {
+  position: relative;
+  font-size: var(--button-button-size);
+  line-height: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: var(--button-button);
+  color: var(--gray-scale-white);
+  text-align: left;
+}
+.button2 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-xl) var(--padding-xs)
+    var(--padding-5xl);
+  background-color: var(--primary-500);
+  border-radius: var(--br-10xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.candidateSettingsChild1 {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  border-top: 1px solid var(--gray-100);
+  box-sizing: border-box;
+}
+.candidateSettings {
+  margin: 0;
+  width: 1600x;
+  background-color: var(--gray-scale-white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  gap: var(--gap-13xl);
+  max-width: 100%;
+}
+
+
+
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Change as per your font */
+}
+
+/* Main container */
+.candidateSettings {
+  background-color: #fff;
+  max-width: 1800px; /* Adjust width as needed */
+  margin: 100px auto; /* Center the form with top margin */
+  padding: 60px;
+  
+}
+
+/* Section Headings */
+.settings {
+  font-size: 30px; /* Adjust size as per design */
+  color: #333;
+  margin-bottom: 0px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/* Form input fields */
+.inputField input[type='text'],
+.inputField input[type='email'],
+.inputField input[type='password'] {
+  width: 100%; /* Full width - padding */
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px; /* Adjust size as per design */
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/* Buttons */
+.button {
+  width: auto; /* Auto width to fit text */
+  color: #fff; /* Text color */
+  padding: 15px 15px;
+  margin: 0px 0 0px; /* Spacing around buttons */
+  background-color: #007bff; /* Replace with your brand color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.deleteButton {
+  width: auto; /* Auto width to fit text */
+  color: #fff; /* Text color */
+  padding: 15px 15px;
+  margin: 10px 0 20px; /* Spacing around buttons */
+  background-color: #c40000; /* Replace with your brand color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+.deleteButton:hover {
+  background-color: #8b0000; /* Darker shade on hover */
+}
+/* Utility classes for alignment */
+.align-left {
+  text-align: left;
+}
+
+.no-border {
+  border: none;
+}
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns children (title and inputs) to the start of the flex container */
+  width: 100%; /* Adjust width as necessary */
+  max-width: 600px; /* Or whatever maximum width you prefer */
+  margin: 0 auto; /* Keeps the entire group centered */
+
+
+}
+.inputGroup input, .inputGroup select, .inputGroup textarea {
+  width: 100%; /* Full width within the .inputGroup */
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  display: block; /* Ensures the input takes up the full width of its parent */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.resumeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+}
+/* Responsive adjustments */
+@media screen and (max-width: 1600px) {
+  .candidateSettings {
+    width: 100%;
+    padding: 50px auto;
+  }
+}

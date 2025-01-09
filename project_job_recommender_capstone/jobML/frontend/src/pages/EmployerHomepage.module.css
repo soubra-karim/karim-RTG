@@ -1,0 +1,415 @@
+
+html, body {
+  height: 100%;
+  overflow-y: auto; /* This should allow scrolling */
+}
+
+.button,
+.buttonChild {
+  height: 48px;
+  width: 48px;
+  display: none;
+}
+.buttonChild {
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.button {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.tEXTFrame,
+.tEXTFrame1,
+.tEXTFrame2 {
+  height: 20px;
+  width: 4px;
+  position: relative;
+  border-right: 4px solid var(--gradient-red-gradient-9);
+  box-sizing: border-box;
+}
+.tEXTFrame1,
+.tEXTFrame2 {
+  height: 16px;
+  border-right: 4px solid var(--gradient-orange-gradient-10);
+}
+.tEXTFrame2 {
+  height: 12px;
+  border-right: 4px solid var(--gradient-blue-gradient-19);
+}
+.sitelogo1 {
+  align-self: stretch;
+  width: 0;
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.sitelogo {
+  height: 26px;
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  z-index: 1;
+}
+.jobsync {
+  position: relative;
+  font-size: var(--heading-04-size);
+  line-height: 40px;
+  font-weight: 600;
+  font-family: var(--button-button);
+  color: var(--gray-900);
+  white-space: nowrap;
+  margin: 0 0 0-2px;
+}
+.lineTextInput,
+.siteLogoInstance {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.siteLogoInstance {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 var(--padding-9xs);
+  font-family: var(--font-roboto);
+}
+.image1Icon {
+  height: 16px;
+  width: 24px;
+  position: relative;
+  object-fit: cover;
+}
+.india {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.caretdownIcon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+}
+.image1Parent {
+  height: 20px;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-xs);
+}
+.searchChild {
+  height: 33px;
+  width: 1px;
+  position: relative;
+  border-right: 1px solid var(--gray-100);
+  box-sizing: border-box;
+  display: none;
+}
+.fisearchIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 24px;
+}
+.skillsKeyword {
+  width: 112px;
+  border: 0;
+  outline: 0;
+  font-family: var(--button-button);
+  font-size: var(--button-button-size);
+  background-color: transparent;
+  height: 24px;
+  position: relative;
+  line-height: 24px;
+  color: var(--gray-400);
+  text-align: left;
+  display: inline-block;
+  white-space: nowrap;
+}
+.callNowButton,
+.search {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.search {
+  width: 779px;
+  border-radius: var(--br-8xs);
+  background-color: var(--gray-scale-white);
+  border: 1px solid var(--gray-100);
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: var(--padding-smi) var(--padding-5xl);
+  gap: var(--gap-xs);
+}
+.callNowButton {
+  width: 1028px;
+  flex-direction: column;
+  font-size: var(--body-small-500-size);
+  color: var(--gray-900);
+}
+.home {
+  position: relative;
+  line-height: 20px;
+}
+.footerLink1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-9xs) 0 0;
+  color: var(--primary-500);
+}
+.dashboard,
+.myProfile {
+  flex: 1;
+  position: relative;
+}
+.dashboard {
+  line-height: 20px;
+}
+.myProfile {
+  white-space: nowrap;
+}
+.signoutIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.logOut {
+  position: relative;
+  line-height: 20px;
+}
+.lineSeparator {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+  color: var(--gray-500);
+}
+.footerLink {
+  width: 451px;
+  justify-content: flex-start;
+  padding: 0 var(--padding-12xs) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-9xl);
+  font-size: var(--body-xl-500-size);
+  color: var(--gray-600);
+}
+.footerLink,
+.navigation,
+.navigation1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+}
+.navigation1 {
+  flex: 1;
+  background-color: var(--gray-scale-white);
+  justify-content: flex-start;
+  padding: var(--padding-xl) var(--padding-9xl);
+  box-sizing: border-box;
+  gap: var(--gap-12xl);
+}
+.navigation {
+  align-self: stretch;
+  box-shadow: 0-1px 0#e4e5e8 inset;
+  justify-content: center;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-black);
+  font-family: var(--button-button);
+}
+.employerHomepage {
+  min-height: 100vh; /* Minimum height of the viewport */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Push footer to the bottom */
+}
+
+@media screen and (max-width: 1600px) {
+  .footerLink {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navigation1 {
+    gap: var(--gap-12xl);
+  }
+}
+.jobContainer {
+  flex-grow: 1; /* Grow to fill available space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  padding: 50px 0; /* Add some padding */
+}
+
+.noJobsMessage {
+  color: #333; /* Any color you prefer */
+  margin-bottom: 20px; /* Space between message and button */
+  font-family: var(--font-roboto), sans-serif; /* Ensure button uses Roboto */
+  font-size: 3rem;
+  font-weight: 200;
+
+}
+
+.createJobButton {
+  padding: 15px 30px; /* Adjust padding as needed */
+  font-size: 1.5rem; /* Adjust font-size as needed */
+  color: white; /* Text color */
+  background-color: var(--primary-500);  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.createJobButton:hover {
+  background-color: var(--color-dodgerblue);
+}
+
+/* Job Card Styles */
+.yourJobPostingsHeading {
+  /* Add styles for the job postings heading here, similar to .searchResultsTitle */
+  user-select: none;
+  cursor: default;
+  font-size: 2rem;
+  font-weight: 590;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.jobListingsContainer {
+  width: 100%;
+  max-width: 1200px; /* Or adjust to fit your design */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the job cards in the container */
+  justify-content: center; /* Centers the job cards vertically if there's extra space */
+  margin: auto; /* Added to center the container itself if the viewport is wider than max-width */
+}
+
+.jobCard {
+  user-select: none;
+  cursor: default;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Full width of container */
+  max-width: 1550px; /* Adjust this to change the card width */
+  margin-left: auto; /* Centers the card within the container */
+  margin-right: auto; /* Centers the card within the container */
+}
+
+.jobTitle {
+  /* Title of the job inside the card */
+  font-size: 1.50rem;
+  font-weight: 200;
+  color: #333;
+  flex: 1;
+}
+
+.jobDetails {
+  /* Container for company name and location */
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.companyName, .location {
+  /* Styles for company name and location */
+  font-size: 1.25rem;
+  color: #666;
+  margin: 4px 0;
+}
+
+.viewJobButton {
+  /* Align this button to the right */
+  padding: 10px 15px;
+  background-color: var(--primary-500);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.15rem;
+}
+
+.viewJobButton:hover {
+  background-color: var(--color-dodgerblue);
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.editJobButton {
+  /* Align this button to the right */
+  padding: 10px 15px;
+  background-color: var(--primary-500);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.15rem;
+  justify-self: right;
+}
+
+.editJobButton:hover {
+  background-color: var(--color-dodgerblue);
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+
+
+.createJobButton2 {
+  padding: 15px 30px; /* Adjust padding as needed */
+  font-size: 1.5rem;
+  margin-top: 20px; /* Adjust font-size as needed */
+  margin-bottom: 40px;
+  color: white; /* Text color */
+  background-color: var(--primary-500);  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.createJobButton2:hover {
+  background-color: var(--color-dodgerblue);
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* Adjust the gap between the buttons */
+}
