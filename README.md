@@ -1,5 +1,6 @@
 # karim-RTG
 study notes:https://www.notion.so/SOC-Design-Study-Notes-17ae6f9f865880538b21cd7e19bab082?pvs=4
+
 Course work and personal projects.
 
 
