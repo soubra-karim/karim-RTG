@@ -1,9 +1,3 @@
-/*
- * barrel_shift.h
- *
- *  Created on: Dec 26, 2024
- *      Author: KKS
- */
 
 #ifndef BARREL_SHIFT_H_
 #define BARREL_SHIFT_H_

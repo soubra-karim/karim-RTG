@@ -1,9 +1,3 @@
-/*
- * sc_main.cpp
- *
- *  Created on: Dec 28, 2024
- *      Author: KKS
- */
 
 
 

@@ -1,9 +1,3 @@
-/*
- * alu.h
- *
- *  Created on: Dec 26, 2024
- *      Author: KKS
- */
 
 #ifndef ALU_H_
 #define ALU_H_

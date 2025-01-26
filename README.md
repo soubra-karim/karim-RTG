@@ -1,6 +1,6 @@
 # karim-RTG
 study notes:https://giant-approach-db5.notion.site/SOC-Design-Study-Notes-17ae6f9f865880538b21cd7e19bab082
-
+Useful website: https://zipcpu.com/blog/2018/07/06/afifo.html
 Course work and personal projects.
 
 
