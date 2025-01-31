@@ -1,0 +1,3 @@
+  CREATE_STREAM @0 {NAME:rff T:Transactions SCOPE:uvm_test_top.env.a.seqr STREAM:614}
+  CREATE_STREAM @590 {NAME:vdin T:Transactions SCOPE:uvm_test_top.env.a.seqr STREAM:805}
+  CREATE_STREAM @1190 {NAME:rdin T:Transactions SCOPE:uvm_test_top.env.a.seqr STREAM:974}
