@@ -1,15 +1,11 @@
-
-
-
-
-
+`include "alu_if.sv"
 module alu(
   input clock,
   input reset,
-  input [7:0] A,B,  // ALU 8-bit Inputs                 
-  input [3:0] ALU_Sel,// ALU Selection
-  output reg [7:0] ALU_Out, // ALU 8-bit Output
-  output bit CarryOut // Carry Out Flag
+  input [7:0] A,B,                
+  input [3:0] ALU_Sel,
+  output reg [7:0] ALU_Out, 
+  output bit CarryOut 
 );
 
   reg [7:0] ALU_Result;
